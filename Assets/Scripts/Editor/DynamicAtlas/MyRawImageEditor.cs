@@ -1,12 +1,13 @@
+using Scripts.UIDynamic;
 using UnityEditor;
 using UnityEditor.UI;
 using UnityEngine;
 
-namespace Scripts.Editor
+namespace Scripts.Editor.DynamicAtlas
 {
-    [CustomEditor(typeof(UIDynamicImage))]
+    [CustomEditor(typeof(UIDynamicRawImage))]
     [CanEditMultipleObjects]
-    public class MyImageEditor : ImageEditor
+    public class MyRawImageEditor : RawImageEditor
     {
         SerializedProperty _atlasGroup;
 
